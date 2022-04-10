@@ -5,12 +5,14 @@ import java.util.Scanner;
 public class GCFAndLCF {
 
 	public static void main(String[] args) {
+		// INPUTS
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter a number: ");
 		int number1 = scanner.nextInt();
 		int number2 = scanner.nextInt();
 		
 		
+		// OUTPUTS
 		int gcf = GCF(number1, number2);
 		System.out.println(number1 + " and " + number2 + " greatest common factor: " + gcf);
 		int lcf = LCF(number1, number2);

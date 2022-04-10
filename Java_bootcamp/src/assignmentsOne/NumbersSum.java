@@ -3,25 +3,27 @@ package assignmentsOne;
 import java.util.Scanner;
 
 public class NumbersSum {
-
+	
 	public static void main(String[] args) {
+		// OUTPUTS
 		System.out.println("Sum:" + sumNumber());
 	}
 	
-	@SuppressWarnings("unlikely-arg-type")
 	public static int sumNumber() {
+		// INPUTS AND PROCESSING 
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter numbers:  \nEnter a letter x to stop: ");
+		System.out.println("Enter numbers:  \nEnter a letter 0 to stop: ");
 		int sum = 0;
 		while(true) {
-			String number = scanner.next();
-			if (number.equals('x')) {
-				break;
+			int number = scanner.nextInt();
+			if (number == 0) {  // to end of the loop
+				break; 
 			} else {
-				sum = sum + Integer.parseInt(number);
+				sum = sum + number;
 			}
 			
 		}
+		scanner.close();
 		return sum;
 	}
 }
