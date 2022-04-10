@@ -17,7 +17,7 @@ public class NumberMultiTable {
 
 	}
 	
-	// PROCESSING
+	// PROCESSING 
 	public static void multiTable(int x) {
 		int multitable = 0;
 		for (int i = 1; i < 100; i++) {
